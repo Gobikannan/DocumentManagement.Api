@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "e94df6dd-cb38-449c-a47c-a6c97653c740",
+		"name": "DocumentManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Motors",
+							"type": "file",
+							"src": "/C:/Users/<user>/Downloads/hello.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Documents",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Documents",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Documents",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Documents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Document Location",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Documents/760ca85b-c018-4086-a377-f7f9a2368e5f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Documents",
+						"760ca85b-c018-4086-a377-f7f9a2368e5f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Document",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://localhost:44317/api/Documents/760ca85b-c018-4086-a377-f7f9a2368e5f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44317",
+					"path": [
+						"api",
+						"Documents",
+						"760ca85b-c018-4086-a377-f7f9a2368e5f"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

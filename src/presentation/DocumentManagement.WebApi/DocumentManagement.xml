@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DocumentManagement.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:DocumentManagement.WebApi.Controllers.ApiController">
+            <summary>
+            Base Api Controller for all
+            </summary>
+        </member>
+        <member name="P:DocumentManagement.WebApi.Controllers.ApiController.Mediator">
+            <summary>
+            Mediator instance
+            </summary>
+        </member>
+        <member name="T:DocumentManagement.WebApi.Controllers.DocumentsController">
+            <summary>
+            ApiController for Document Management related api calls
+            </summary>
+        </member>
+        <member name="M:DocumentManagement.WebApi.Controllers.DocumentsController.#ctor(Microsoft.Extensions.Options.IOptions{DocumentManagement.Common.Config.AppSettings})">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DocumentManagement.WebApi.Controllers.DocumentsController.UploadDoument">
+            <summary>
+            Adds new document
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DocumentManagement.WebApi.Controllers.DocumentsController.FetchAllDocuments">
+            <summary>
+            Fetch All Documents
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DocumentManagement.WebApi.Controllers.DocumentsController.DownloadDocument(System.String)">
+            <summary>
+            Fetch All Documents
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DocumentManagement.WebApi.Controllers.DocumentsController.DeleteDocument(System.Guid)">
+            <summary>
+            Fetch All Documents
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DocumentManagement.WebApi.Extensions.ExceptionMiddlewareExtensions">
+            <summary>
+            ExceptionMiddlewareExtensions
+            </summary>
+        </member>
+        <member name="M:DocumentManagement.WebApi.Extensions.ExceptionMiddlewareExtensions.ConfigureExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            ConfigureExceptionHandler
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:DocumentManagement.WebApi.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:DocumentManagement.WebApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:DocumentManagement.WebApi.Startup.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="M:DocumentManagement.WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:DocumentManagement.WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
